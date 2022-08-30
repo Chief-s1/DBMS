@@ -1,0 +1,63 @@
+1.
+conn
+system
+orcl
+
+2.
+select table_name from user_tables ;
+
+3.
+show user ;
+
+
+create user swayam identified by abcd12 ; 
+grant resource , connect to swayam ;
+
+4.
+select to_char(sysdate , 'MM-DD-YYYY HH12:MI:SS') "NOW" FROM DUAL;
+// select sysdate from dual;
+
+5.
+CLEAR scr ;
+
+6.
+SHOW ALL;
+
+7.
+SELECT (10 + 5)/2 FROM dual ;
+
+8.
+ create table Student ( roll_no number , name varchar(10), city varchar (10 ) );
+
+9.
+describe student ;
+
+10.
+Select * from student ;
+
+11.
+insert into student (name, roll_no , city ) values ('Amit' , 1, 'Dehradun');
+insert into student (name, roll_no , city ) values ('kapil' , 2, 'Meerut');
+insert into student (roll_no , city ) values ( 3, 'Dehradun');
+insert into student (name, roll_no) values ('Amit' , 4 ) ;
+insert into student (roll_no , city ) values ( 5, 'Delhi');
+
+12.
+select * from student ;
+
+13.
+alter table student add Email varchar2(15);
+
+14.
+select * from student ;
+
+15.
+describe student ;
+
+16.
+
+
+
+
+
+
