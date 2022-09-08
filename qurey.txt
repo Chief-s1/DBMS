@@ -36,11 +36,11 @@ describe student ;
 Select * from student ;
 
 11.
-insert into student (name, roll_no , city ) values ('Amit' , 1, 'Dehradun');
-insert into student (name, roll_no , city ) values ('kapil' , 2, 'Meerut');
-insert into student (roll_no , city ) values ( 3, 'Dehradun');
-insert into student (name, roll_no) values ('Amit' , 4 ) ;
-insert into student (roll_no , city ) values ( 5, 'Delhi');
+insert into student (name, roll_no , city ) values ('Shreya' , 58, 'Dehradun');
+insert into student (name, roll_no , city ) values ('Rakshit' , 45, 'Bageshwar');
+insert into student (name,roll_no , city ) values ('Saurabh', 49, 'Dehradun');
+insert into student (name, roll_no,city) values ('Yash' , 4,'Dehradun' ) ;
+insert into student (name,roll_no , city ) values ( 'Anshuman', 12, 'Delhi');
 
 12.
 select * from student ;
@@ -55,9 +55,126 @@ select * from student ;
 describe student ;
 
 16.
+update student SET EMAIL ='BTECH@GMAIL.com';
 
+17.
+select * from student;
 
+18.
+rollback;
 
+19.
+select * from student;
 
+20.
+describe student ;
 
+21.
+update student set EMAIL='abc@xyz' where name='Amit';
 
+22.
+select * from student ;
+
+23.
+update student set NAME='Shivam' where ROLL_NO='3';
+update student set NAME='Nishant' where ROLL_NO='5';
+insert into student (name, roll_no , city ) values ('Shreya' , 58, 'Dehradun');
+insert into student (name, roll_no , city ) values ('Rakshit' , 45, 'Bageshwar');
+insert into student (name,roll_no , city ) values ('Saurabh', 49, 'Dehradun');
+insert into student (name, roll_no,city) values ('Yash' , 4,'Dehradun' ) ;
+insert into student (name,roll_no , city ) values ( 'Anshuman', 12, 'Delhi');
+update student set EMAIL='Gugle@gmail.in' where EMAIL IS NULL;
+
+24.
+commit
+CLEAR scr;
+
+25.
+select * from student ;
+
+26.
+set linesize 20 ;
+
+27.
+select * from student ;
+
+28.
+descibe student;
+yes it remains same 
+
+29.
+set linesize 500;
+
+30.
+select * from student ;
+
+31.
+set pagesize 7;
+
+32.
+select * from student ;
+
+33.
+set pagesize 200;
+
+34.
+select * from student ;
+
+35.
+set heading off;
+
+36.
+select * from student ;
+
+37.
+set heading on;
+
+38.
+select * from student ;
+
+39.
+set pause on;
+
+40.
+select * from student ;
+
+41.
+alter table student
+drop column name;
+
+42.
+descibe student ;
+
+43.
+select * from student ;
+
+44.
+CREATE TABLE Duplicate AS SELECT * FROM student;
+
+45.
+select * from Duplicate;
+
+46.
+truncate table student ;
+
+47.
+rollback;
+select * from student ;
+
+48.
+drop table student ;
+
+49.
+select * from student;
+
+50.
+rollback;
+
+51.
+SELECT owner, table_name FROM all_tables;
+
+52.
+show user;
+
+53.
+disc;
