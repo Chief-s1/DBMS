@@ -36,11 +36,11 @@ describe student ;
 Select * from student ;
 
 11.
-insert into student (name, roll_no , city ) values ('Shreya' , 58, 'Dehradun');
-insert into student (name, roll_no , city ) values ('Rakshit' , 45, 'Bageshwar');
-insert into student (name,roll_no , city ) values ('Saurabh', 49, 'Dehradun');
-insert into student (name, roll_no,city) values ('Yash' , 4,'Dehradun' ) ;
-insert into student (name,roll_no , city ) values ( 'Anshuman', 12, 'Delhi');
+insert into student (name, roll_no , city ) values ('Amit' , 1, 'Dehradun');
+insert into student (name, roll_no , city ) values ('Kapil' , 2, 'Meerut');
+insert into student (roll_no , city ) values ( 3, 'Dehradun');
+insert into student (name, roll_no) values ('Amit' , 4) ;
+insert into student (roll_no , city ) values ( 5, 'Delhi');
 
 12.
 select * from student ;
@@ -178,3 +178,6 @@ show user;
 
 53.
 disc;
+
+
+
